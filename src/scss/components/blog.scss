@@ -1,15 +1,10 @@
-.blog-wrapper {
-  @include media(desktop) {
-  }
-}
-
 .blog-section {
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 
   @include media(desktop) {
     padding-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
   }
 }
 
@@ -18,24 +13,7 @@
   }
 }
 
-.blog-content-wrapper {
-  border-radius: 16px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background: linear-gradient(
-    0deg,
-    #a3fe3c 0%,
-    rgba(51, 234, 216, 0.5) 46.15%,
-    rgba(78, 145, 125, 0) 100%
-  );
-
-  @include media(desktop) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-.blog-title-wrapper {
+.blog-title {
   @include media(desktop) {
   }
 }
@@ -50,81 +28,82 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  margin-bottom: 40px;
 
   @include media(desktop) {
     flex-direction: row;
+    align-items: start;
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
 .blog-list-item {
-  background: #050510;
-  border: 1px solid #22525a;
-  border-radius: 16px;
-  padding: 20px;
   width: 100%;
-  max-width: 311px;
-  min-height: 300px;
+  max-width: 343px;
 
   @include media(desktop) {
-    max-width: 374px;
-    min-height: 300px;
+    max-width: 394px;
   }
 }
 
 .blog-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
 }
 
 .blog-list-item-text {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.33333;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #333;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.blog-list-item-date {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #7a7a7a;
+  margin-bottom: 24px;
 
   @include media(desktop) {
   }
 }
 
 .blog-read-link {
-  background: #0f8;
-  border-radius: 50px;
-  padding: 12px 28px;
-  width: 100%;
-  max-width: 311px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #3e3e3e;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #333;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 4px;
   transition: all 0.3s ease-in-out;
 
   &:active,
   &:focus {
-    background: #fff;
-    color: #3e3e3e;
   }
 
   @include media(desktop) {
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-
     &:hover {
-      background: #fff;
-      color: #3e3e3e;
     }
+  }
+}
+
+.blog-item-span {
+  @include media(desktop) {
   }
 }
